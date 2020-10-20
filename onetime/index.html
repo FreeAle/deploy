@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div id="main_loader" style="display: none">
+        <div class="bookapointoverlay"></div>
+        <div class="book-a-point_Preloader">
+            <img src="https://cdn.dribbble.com/users/1469628/screenshots/3274806/loader_holiday.gif" alt="Preloader">
+            <!-- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3f3a3831234507.564a1d2338123.gif" alt="Preloader"> -->
+        </div>
+    </div>
+    <meta charset="utf-8">
+    <title>Installer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+
+    <!-- DATE-PICKER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.32.4/sweetalert2.min.css" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form method="POST" action="server.php" name="wizard" id="wizard">
+            <!-- SECTION 1 -->
+            <h4></h4>
+            <section>
+                <h3>Database details</h3>
+                <div class="form-row">
+                    <div class="form-holder h-42">
+                        <i class="fas fa-fire"></i>
+                        <input type="text" name="DB_HOST" class="form-control required" value="127.0.0.1" placeholder="Your Database Host" />
+                    </div>
+                    <div class="form-holder h-42">
+                        <i class="fas fa-database"></i>
+                        <input type="text" name="DB_DATABASE" class="form-control required" value="demo" placeholder="Your Database Name" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-holder h-42">
+                        <i class="fas fa-user-secret"></i>
+                        <input type="text" name="DB_USERNAME" class="form-control" value="root" placeholder="Your Database Username" />
+                    </div>
+                    <div class="form-holder h-42 password">
+                        <i class="fas fa-user-shield"></i>
+                        <input type="password" name="DB_PASSWORD" class="form-control password" placeholder="Your Database Password" />
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- SECTION 2 -->
+            <h4></h4>
+            <section>
+                <h3>Mail Configuration</h3>
+                <div class="form-row">
+                    <div class="form-holder h-42 ">
+                        <input type="text" name="MAIL_HOST" class="form-control" placeholder="Your Mail Service Provider" />
+
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="form-holder h-42 ">
+                        <input type="text" name="MAIL_PORT" class="form-control" placeholder="Your Mail Service Portnumber" />
+
+                        <i class="far fa-handshake"></i>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-holder h-42">
+                        <input type="text" name="MAIL_USERNAME" class="form-control" placeholder="Your Username" />
+
+
+                        <i class="fas fa-user-secret"></i>
+
+                    </div>
+                    <div class="form-holder h-42 password2">
+                        <i class="fas fa-user-shield"></i>
+                        <input type="password" name="MAIL_PASSWORD" class="form-control password" placeholder="Your Password" />
+                    </div>
+
+                </div>
+                <div class="form-row ">
+                    <div class="form-holder h-42 w-100 ">
+                        <input type="text" name="MAIL_FROM_ADDRESS" class="form-control" placeholder="Sender Mail Address"
+                            class="form-control" />
+
+                        <i class="fas fa-mail-bulk"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <h4></h4>
+            <section>
+                <h3 style="margin-bottom: 16px;">Your Credentials</h3>
+                <div class="form-row">
+                    <div class="form-holder h-42  w-100">
+                        <input disabled type="text" name="email" class="form-control" value="admin@admin.com" />
+
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-holder h-42 w-100 ">
+                        <input disabled type="text" name="password" class="form-control" value="admin12345" />
+                        <i class="fas fa-key"></i>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- JQUERY STEP -->
+    <script src="js/jquery.steps.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.32.4/sweetalert2.min.js"></script>
+
+</body>
+
+</html>

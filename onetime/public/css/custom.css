@@ -1,0 +1,33 @@
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.add-btn{
+    position: relative;
+    top: -62px;
+    left: 95%;
+
+}
+.btn-circle-lg i{
+    top: 0px !important;
+}
+#cancel{
+    top: -25px;
+    left: 15px;
+}
+#cancelUpdate{
+    top: -25px;
+    left: 15px;
+}
+.btn-delete:before {
+    content: "\f2da";
+    display: inline-block;
+    font-family: FontAwesome;
+    position: absolute;
+    right: -1.5em;
+  }
+  form{
+      margin-bottom: 0% !important;
+  }
